@@ -1,3 +1,21 @@
+# Currency converter 
+ ## You can convert PLN to:
+ - USD
+ - EUR
+ - CHF
+
+ ## If You want convert:
+ - enter the amount in PLN
+ - choose a currency
+ - click the button "Przelicz!"
+
+
+![amount](./public/image/Animation.gif)
+
+### Exchange rates come from the website walutomat.pl of 24.03.2023
+
+### Demo version: https://switaczaleksandra.github.io/currency-converter-react/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

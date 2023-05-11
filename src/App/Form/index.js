@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css"
+import { Button, Field, Header, Info, LabelText } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -14,13 +14,13 @@ export const Form = ({ calculateResult, result }) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <legend className="form__legend"> <strong>Przelicznik walut</strong></legend>
+      <Header> <strong>Przelicznik walut</strong></Header>
       <p>
         <label>
-          <span class="form__labelText">
+          <LabelText>
             Kwota w zł*:
-          </span>
-          <input
+          </LabelText>
+          <Field
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             className="form__field js-amount"
@@ -33,11 +33,11 @@ export const Form = ({ calculateResult, result }) => {
       </p>
       <p>
         <label>
-          <span className="form__labelText">
+          <LabelText>
             Wybierz walutę:
-          </span>
-          <select
-            className="form__field js-currency"
+          </LabelText>
+          <Field
+            as="select"
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -49,13 +49,13 @@ export const Form = ({ calculateResult, result }) => {
                 {currency.name}
               </option>
             )))}
-          </select>
+          </Field>
         </label>
       </p>
       <p>
-        <button className="form__button">Przelicz!</button>
+        <Button>Przelicz!</Button>
       </p>
-      <p className="form__info"> Kursy pochodzą ze strony <strong>walutomat.pl</strong> na dzień 24.03.2023 r.</p>
+      <Info> Kursy pochodzą ze strony <strong>walutomat.pl</strong> na dzień 24.03.2023 r.</Info>
       <Result result={result} />
     </form>
   );

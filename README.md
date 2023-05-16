@@ -1,8 +1,5 @@
 # Currency converter 
- ## You can convert PLN to:
- - USD
- - EUR
- - CHF
+ ## You can convert PLN to diffrent currency.
 
  ## If You want convert:
  - enter the amount in PLN
@@ -12,7 +9,7 @@
 
 ![amount](./public/image/Animation.gif)
 
-### Exchange rates come from the website walutomat.pl of 24.03.2023
+### Exchange rates come from opened API - it is download from European Bank Center every day.
 
 ### Demo version: https://switaczaleksandra.github.io/currency-converter-react/
 

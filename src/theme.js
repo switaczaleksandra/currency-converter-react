@@ -5,5 +5,6 @@ export const theme = {
       silver: "ccc",
       violetEggplant: "#9B1C7F",
       white: "#fff",
+      crimson: "db143c",
    }
 };

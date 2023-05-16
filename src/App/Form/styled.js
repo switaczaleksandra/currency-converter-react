@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const StyledForm = styled.form`
+    display: block;
+    margin-top: 0 auto;
+`;
+
 export const Field = styled.input`
     border: 1px solid ${({ theme }) => theme.color.black};
     padding: 5px;
@@ -51,3 +56,10 @@ export const Info = styled.p`
     width: 100%;
 `;
 
+export const Loading = styled.p`
+   color: ${({ theme }) => theme.color.violetEggplant};
+   `;
+
+export const Failure = styled.p`
+   color: ${({ theme }) => theme.color.crimson};
+   `;
